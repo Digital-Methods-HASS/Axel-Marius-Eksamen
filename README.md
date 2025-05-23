@@ -4,6 +4,7 @@ Dette GitHub repository indeholder materiale tilhørende portofolio-eksamen for 
 
 # Gruppemedlemmer:
 Axel Storgaard Landerholm - 202408782
+
 Marius Hatt - 202406187
 
 
