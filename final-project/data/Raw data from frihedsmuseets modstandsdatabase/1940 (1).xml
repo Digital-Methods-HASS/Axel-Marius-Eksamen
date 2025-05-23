@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Frihedsmuseet</Author>
+  <LastAuthor>Frihedsmuseet</LastAuthor>
+  <Created>2010-04-12T10:19:21Z</Created>
+  <LastSaved>2010-04-12T10:19:48Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7815</WindowHeight>
+  <WindowWidth>14220</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>15</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Modstandsregistreringer">
+  <Table ss:ExpandedColumnCount="30" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">vID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Efternavn</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Fornavn</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Fødselsdato</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dødsdato</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Beskæftigelse</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Adresse</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">By</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Region</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Amt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Distrikt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Brigade</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Bataillon</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Kompagni</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Deling</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Gruppe</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Ledelse</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Stab</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Særformation</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Lokalitet</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Rang</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Organisering 1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Organisering 2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Organisering 3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Organisering 4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Modstandstype</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Modstandsgrad</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Køn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">7946</Data></Cell>
+    <Cell><Data ss:Type="String">8898</Data></Cell>
+    <Cell><Data ss:Type="String">Dons</Data></Cell>
+    <Cell><Data ss:Type="String">Peter Andersen </Data></Cell>
+    <Cell><Data ss:Type="String">11.12.1876</Data></Cell>
+    <Cell><Data ss:Type="String">04.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String">Kriminalassistent</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Region VI (København)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">København</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Efterretning</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9270</Data></Cell>
+    <Cell><Data ss:Type="String">10355</Data></Cell>
+    <Cell><Data ss:Type="String">Lausten</Data></Cell>
+    <Cell><Data ss:Type="String">Viggo Peter Johannes</Data></Cell>
+    <Cell><Data ss:Type="String">31.07.1904</Data></Cell>
+    <Cell><Data ss:Type="String">02.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String">Redaktør</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Region III (Sydjylland)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Tønder</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Efterretning</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">7946</Data></Cell>
+    <Cell><Data ss:Type="String">145842</Data></Cell>
+    <Cell><Data ss:Type="String">Dons</Data></Cell>
+    <Cell><Data ss:Type="String">Peter Andersen </Data></Cell>
+    <Cell><Data ss:Type="String">11.12.1876</Data></Cell>
+    <Cell><Data ss:Type="String">04.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String">Overbetjent</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Region III (Sydjylland)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Efterretning</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9270</Data></Cell>
+    <Cell><Data ss:Type="String">146733</Data></Cell>
+    <Cell><Data ss:Type="String">Lausten</Data></Cell>
+    <Cell><Data ss:Type="String">Viggo Peter Johannes</Data></Cell>
+    <Cell><Data ss:Type="String">31.07.1904</Data></Cell>
+    <Cell><Data ss:Type="String">02.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String">Redaktør</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Region III (Sydjylland)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Tønder</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Efterretning</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9270</Data></Cell>
+    <Cell><Data ss:Type="String">192272</Data></Cell>
+    <Cell><Data ss:Type="String">Lausten</Data></Cell>
+    <Cell><Data ss:Type="String">Viggo</Data></Cell>
+    <Cell><Data ss:Type="String">31.07.1904</Data></Cell>
+    <Cell><Data ss:Type="String">02.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Almen illegal aktivitet</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">83755</Data></Cell>
+    <Cell><Data ss:Type="String">217375</Data></Cell>
+    <Cell><Data ss:Type="String">Simonsen</Data></Cell>
+    <Cell><Data ss:Type="String">William Undith</Data></Cell>
+    <Cell><Data ss:Type="String">21.06.1918</Data></Cell>
+    <Cell><Data ss:Type="String">23.11.1940</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Sæby</Data></Cell>
+    <Cell><Data ss:Type="String">Region I (Nordjylland)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Almen illegal aktivitet</Data></Cell>
+    <Cell><Data ss:Type="String">Aktiv</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9270</Data></Cell>
+    <Cell><Data ss:Type="String">218502</Data></Cell>
+    <Cell><Data ss:Type="String">Lausten</Data></Cell>
+    <Cell><Data ss:Type="String">Viggo</Data></Cell>
+    <Cell><Data ss:Type="String">31.07.1904</Data></Cell>
+    <Cell><Data ss:Type="String">02.05.1940</Data></Cell>
+    <Cell><Data ss:Type="String">Redaktør på Flensborg Avis' Tønderredaktion.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Region III (Sydjylland)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Andet</Data></Cell>
+    <Cell><Data ss:Type="String">Fængslet</Data></Cell>
+    <Cell><Data ss:Type="String">Mand</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
+
