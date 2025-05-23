@@ -1,9 +1,11 @@
 # Axel-Marius-Eksamen
 Dette GitHub repository indeholder materiale tilhørende portofolio-eksamen for Digitale arkiver og metode.
 
+
 # Gruppemedlemmer:
 Axel Storgaard Landerholm - 202408782
 Marius Hatt - 202406187
+
 
 # GitHub Repository indhold:
 Regex / Openrefine assignment (W8) - (Mappe: regex_openrefine_assignment)
