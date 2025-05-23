@@ -1,0 +1,178 @@
+---
+title: "Temporal Analysis of Danish Resistance Casualties, 1940–1945"
+author: "Axel Landerholm and Marius Hatt"
+date: 'Created on 05 May 2025 and updated `r format(Sys.time(), "%d %B, %Y")`'
+output:  
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: true
+    theme: lumen
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE)
+```
+
+```{r}
+dir.create("figures")
+```
+
+
+## Load the resistance data
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(here)
+
+# Read data
+resistance <- read.csv2("data/resistance.csv")
+
+head(resistance)
+```
+
+## Mutate data
+```{r}
+# Convert death column to three seperate columns
+resistance <- resistance %>%
+  mutate(date_of_death = dmy(date_of_death),   
+         death_day = day(date_of_death),
+         death_month = month(date_of_death),
+         death_year = year(date_of_death))
+```
+
+```{r}
+# Create a month-date (first day of the month)
+resistance <- resistance %>%
+  mutate(date_of_death = floor_date(date_of_death, "month"))
+
+# Group by month
+monthly_deaths <- resistance %>%
+  group_by(date_of_death) %>%
+  summarise(n = n()) %>%
+  arrange(date_of_death)
+
+# Show deadliest months
+monthly_deaths %>%  
+  arrange(desc(n))
+```
+
+## Create visual
+```{r}
+# Plot the months
+graph1 <- ggplot(monthly_deaths, aes(x = date_of_death, y = n)) +
+  geom_col(fill = "royalblue") +
+  labs(title = "Resistance Deaths per Month During the Occupation",
+    x = "Month",
+    y = "Number of Deaths") +
+  scale_x_date(date_labels = "%b %Y", date_breaks = "3 months") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(size = 15, face = "bold", hjust = 0.4)) +
+    geom_vline(xintercept = as.Date("1940-04-09"), linetype = "dashed", color = "red") +
+  annotate("text", x = as.Date("1940-04-09"), y = max(monthly_deaths$n, na.rm = TRUE),
+           label = "Beginning of Occupation", 
+           angle = 90, vjust = 2, hjust = 1.5, size = 3) +
+  geom_vline(xintercept = as.Date("1943-08-28"), linetype = "dashed", color = "red") +
+  annotate("text", x = as.Date("1943-08-28"), y = max(monthly_deaths$n, na.rm = TRUE),
+           label = "End of Cooperation Policy", 
+           angle = 90, vjust = 2, hjust = 1.5, size = 3) +
+  geom_vline(xintercept = as.Date("1945-05-05"), linetype = "dashed", color = "red") +
+  annotate("text", x = as.Date("1945-05-05"), y = max(monthly_deaths$n, na.rm = TRUE),
+           label = "End of Occupation",
+           angle = 90, vjust = 2, hjust = 1.8, size = 3)
+
+# Visualize
+graph1
+
+# Save it
+ggsave(plot = graph1, 
+       here("figures", "death_per_month.png"), 
+       height = 4, 
+       width = 8,
+       bg = "white",
+       dpi = 300)
+```
+
+To add dotted lines for specific dates on the graph we put our code into ChatGPT and promted it with the following: "hvordan kan jeg markere annoteringer direkte på grafen?". We also asked ChatGPT to add code that made the graph cleaner looking.
+
+## Region visual
+```{r}
+# Isolating regions 
+region_counts <- resistance %>%
+  mutate(region = ifelse(is.na(region), "(Missing Region Data)", region)) %>%
+  count(region)
+```
+
+```{r}
+# Plot the regions
+graph2 <- ggplot(region_counts, aes(x = fct_reorder(region, n), y = n)) +
+  geom_col(fill = "firebrick") +
+  labs(title = "Resistance Deaths per Region",
+       x = "Region",
+       y = "Number of Deaths") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5))
+
+# Show it 
+graph2
+
+# Save it
+ggsave(plot = graph2,
+       here("figures", "death_per_region.png"), 
+       height = 4, 
+       width = 8,
+       bg = "white",
+       dpi = 300)
+```
+
+We added our code for the graph to ChatGPT and promted it with the following: "lav grafen pænere og gør labelerne på x aksen mere læsbare". The result was that it used fct_reorder to organize the graph, as well as the code under theme().
+
+## Resistance types by region visual
+```{r}
+# Find top 5 types of resistance
+top5_types <- resistance %>%
+  count(type_of_resistance, sort = TRUE) %>%
+  slice_head(n = 5) %>%
+  pull(type_of_resistance)
+
+# Replace NA in region with "(Missing Region Data)"
+resistance2 <- resistance %>%
+  filter(type_of_resistance %in% top5_types) %>%
+  mutate(region = ifelse(is.na(region), "(Missing Region Data)", region))
+
+# Plot with the updated region
+graph3 <- resistance2 %>%
+  count(region, type_of_resistance) %>%
+  ggplot(aes(x = type_of_resistance, y = n, fill = type_of_resistance)) +
+  geom_col() +
+  facet_wrap(~ region, ncol = 3) +
+  labs(title = "Death Toll of Danish Resistance Fighters by Types of Resistance and Region",
+       x = NULL,
+       y = "Number of Deaths",
+       fill = "Type of Resistance") +
+  theme_minimal() +
+  theme(strip.text = element_text(face = "bold"),
+    plot.title = element_text(size = 13, face = "bold", hjust = 0.1),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank())
+
+# Show it
+graph3
+
+# Save it
+ggsave(plot = graph3,
+       here("figures", "death_region_type.png"), 
+       height = 5, 
+       width = 8,
+       bg = "white",
+       dpi = 300)
+
+```
+
+We  added our code for the previous graph in ChatGPT and promted it with the following: "hvordan laver jeg et facetplot i rstudio, hvor den er delt op mellem de 7 regioner i forhold til type_of_resistance"
